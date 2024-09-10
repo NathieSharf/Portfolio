@@ -1,10 +1,15 @@
 :root {
     --color-bg: #222;
-    --color-accent: #f76000;
+    --color-bg-transparent-light: rgba(10, 10, 10, .6);
+    --color-bg-transparent-dark: rgba(10, 10, 10, .9);
+    --color-accent: #ff939c;
+    --color-accent-dark: #de7e86;
     --color-text: #eee;
 }
 html, body
 {
+    box-sizing: border-box;
+    height: 100%;
     padding: 0;
     margin: 0;
 }
@@ -16,13 +21,15 @@ html
 }
 body
 {
+    color: var(--color-text);
     min-height: 100%;
 }
 .nav
 {
-    background-color: yellow;
+    /*background-color: var(--color-bg-transparent);*/
     text-align: center;
     position: fixed;
+    padding: 10px 0;
     right: 0;
     left: 0;
 }
@@ -38,36 +45,132 @@ body
 }
 .nav > ul > li > a
 {
-    background-color: lightblue;
+    color: var(--color-text);
     text-decoration: none;
     display: block;
     padding: 10px;
-    color: var(--color-text);
+    opacity: 0.8;
 }
-.nav > ul > li > a.selected
+.nav > ul > li > a:hover
 {
-    background-color: lightpink;
+    opacity: 1;
+}
+.nav > ul > li > a.selected,
+.nav > ul > li > a.selected:hover
+{
+    color: var(--color-accent);
     pointer-events: none;
+    opacity: 1;
 }
 .content
 {
-    
+    box-sizing: border-box;
+    flex-direction: column;
+    min-height: 100%;
+    display: flex;
+}
+#bg-video
+{
+    transform: translateX(calc((100% - 100vw) / 2));
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    opacity: .6;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
 }
 .page
 {
-    min-height: 100vh;
     display: none;
+    flex-grow: 1;
 }
+/*
 .page#home {background-color: green;}
 .page#about {background-color: yellow;}
 .page#gallery {background-color: red;}
 .page#contact {background-color: purple;}
+*/
 .page-wrap
 {
-    padding: 40px;
+    padding-top: 60px;
+}
+.margin
+{
+    margin: 0 20vw;
+}
+.welcome
+{
+    margin-top: 20vh;
+}
+.button
+{
+    border: 2px solid #FFF;
+    display: inline-block;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 15px;
+    color: #FFF;
+}
+.button.play
+{
+    background: url("../img/icons/play.png") no-repeat 0 50%;
+    background-size: auto 80%;
+    background-position: 5px;
+    padding-left: 50px;
+}
+.button:hover
+{
+    background-color: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+}
+.profile
+{
+    background-position: 50% 50%;
+    background-size: 200%;
+    border-radius: 50%;
+    max-height: 500px;
+    max-width: 500px;
+    margin: 40px;
+    height: 30vw;
+    width: 30vw;
+}
+.gallery
+{
+
+}
+.gallery > .card
+{
+    background-color: rgba(255, 0, 0, .4);
+}
+#lightbox
+{
+    background-color: var(--color-bg-transparent-dark);
+    justify-content: center;
+    transition: opacity 1s;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    opacity: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+#lightbox.hidden {
+    transition-duration: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+p
+{
+    line-height: 115%;
 }
 .footer
 {
+    /*background-color: var(--color-bg-transparent);*/
     text-align: center;
+    flex-shrink: 0;
     padding: 20px;
+    flex-grow: 0;
 }

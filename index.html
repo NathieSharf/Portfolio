@@ -2,6 +2,7 @@
 <head>
     <title>Nathalie Sharf Portfolio</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
     <script src="./js/jquery-3.7.1.min.js" type="text/javascript"></script>
     <script src="./js/main.js" type="text/javascript"></script>
 </head>
@@ -16,27 +17,88 @@
             </ul>
         </div>
     </div>
+    <div id="lightbox" class="hidden">
+        <!--<iframe id="videoplayer" style="border:none;" src="" width="900" height="506"></iframe>-->
+    </div>
     <div class="content">
         <div class="page" id="home">
+            <video autoplay muted loop id="bg-video">
+                <source src="./img/bg-video/video.mp4" type="video/mp4">
+            </video>
             <div class="page-wrap">
-                Hjem
+                <div class="margin">
+                    <div class="welcome">
+                        <h1>NATHALIE SHARF</h1>
+                        <h2>FTP-elev: Videoredigering, kamera, musik</h2>
+                        <div class="button play" video-id="1FPdSSsztu9knwxU9QtIADbTe0-FG8vok">Se Showreel</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="page" id="about">
             <div class="page-wrap">
-                Om mig
+                <div class="margin">
+                    <center>
+                        <div class="profile"
+                            style="background-image:url('./img/profile.jpg');">
+                        </div>
+                    </center>
+                    <p>
+                        Min interesse for film, filmmusik og lyd har i mange år været
+                        min passion, da jeg er en habil violinist. Men da jeg begyndte
+                        at arbejde med film, fandt jeg ud af, at det er alle aspekter
+                        af film- og tv-produktion, jeg finder spændende. <br>
+                        Det gik op for mig, hvor meget film trækker i mig, og hvor
+                        meget jeg elsker at lege med det hver dag. <br>
+                        Ud over projekter med videografi,
+                        lyddesign og idégenerering til videoer til YouTube og Instagram
+                        har jeg samarbejdet med forskellige tekstforfattere og
+                        formidlere, ligesom jeg har udfærdiget lydmontager og podcasts. <br>
+                        Nu går jeg så på FTP og har færdiggjort GF2 og forfølger
+                        drømmen og håber på at finde en elevplads, hvor jeg kan udbygge
+                        min erfaring med film- og tv-produktion endnu mere!
+                    </p>
+                </div>
             </div>
         </div>
         <div class="page" id="gallery">
             <div class="page-wrap">
-                Galleri
+                <div class="margin">
+                    Gallery
+                    <div class="gallery">
+                        <div class="card">
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="page" id="contact">
             <div class="page-wrap">
-                Kontakt
+                <div class="margin">
+                    <form action="">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <br>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <br>
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <br>
+                        <label for="subject">Subject</label>
+                        <br>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <br>
+                        <input type="submit" value="Submit">
+                     </form>
+                </div>
             </div>
         </div>
-        <div class="footer">(C) Nathalie Sharf</div>
+        <div class="footer">© 2024 Nathalie Sharf</div>
     </div>
 </body>
