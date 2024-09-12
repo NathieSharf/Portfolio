@@ -257,7 +257,8 @@ p
 }
 p.sign
 {
-    font-family: "bradley hand itc";
+    /*font-family: "bradley hand itc";*/
+    font-family: "Dancing Script";
     font-weight: bold;
     font-size: 18pt;
 }
