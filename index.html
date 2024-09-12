@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <head>
     <title>Nathalie Sharf Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio til Nathalie Sharf">
+    <meta name="keywords" content="Nathalie, Sharf, Nathalie Sharf, FTP, GF2, Film">
+    <meta name="author" content="Nathalie Sharf">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <script src="./js/jquery-3.7.1.min.js" type="text/javascript"></script>
@@ -18,24 +23,25 @@
         </div>
     </div>
     <div id="lightbox" class="hidden">
+        <div class="loader"></div>
         <!--<iframe id="videoplayer" style="border:none;" src="" width="900" height="506"></iframe>-->
     </div>
     <div class="content">
-        <div class="page" id="home">
+        <div class="page fullscreen" id="home">
             <video autoplay muted loop id="bg-video">
                 <source src="./img/bg-video/video.mp4" type="video/mp4">
             </video>
             <div class="page-wrap">
                 <div class="margin">
                     <div class="welcome">
-                        <h1>NATHALIE SHARF</h1>
+                        <h1 class="accent-color">Nathalie Sharf</h1>
                         <h2>FTP-elev: Videoredigering, kamera, musik</h2>
-                        <div class="button play" video-id="1FPdSSsztu9knwxU9QtIADbTe0-FG8vok">Se Showreel</div>
+                        <div class="button play" video-type="drive" video-id="1FPdSSsztu9knwxU9QtIADbTe0-FG8vok">Se Showreel</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="page" id="about">
+        <div class="page fullscreen" id="about">
             <div class="page-wrap">
                 <div class="margin">
                     <center>
@@ -43,59 +49,523 @@
                             style="background-image:url('./img/profile.jpg');">
                         </div>
                     </center>
+                    <h1 class="accent-color center">Om mig</h1>
                     <p>
                         Min interesse for film, filmmusik og lyd har i mange år været
                         min passion, da jeg er en habil violinist. Men da jeg begyndte
                         at arbejde med film, fandt jeg ud af, at det er alle aspekter
-                        af film- og tv-produktion, jeg finder spændende. <br>
+                        af film- og tv-produktion, jeg finder spændende. <br><br>
                         Det gik op for mig, hvor meget film trækker i mig, og hvor
-                        meget jeg elsker at lege med det hver dag. <br>
+                        meget jeg elsker at lege med det hver dag. <br><br>
                         Ud over projekter med videografi,
                         lyddesign og idégenerering til videoer til YouTube og Instagram
                         har jeg samarbejdet med forskellige tekstforfattere og
-                        formidlere, ligesom jeg har udfærdiget lydmontager og podcasts. <br>
+                        formidlere, ligesom jeg har udfærdiget lydmontager og podcasts. <br><br>
                         Nu går jeg så på FTP og har færdiggjort GF2 og forfølger
                         drømmen og håber på at finde en elevplads, hvor jeg kan udbygge
                         min erfaring med film- og tv-produktion endnu mere!
                     </p>
+                    <p class="sign">Nathalie Sharf</p>
+                    <p>
+                        <a href="./CV Nathalie Sharf.pdf" target="_blank">Læs mit CV</a>
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="page" id="gallery">
+        <div class="page fullscreen" id="gallery">
             <div class="page-wrap">
                 <div class="margin">
-                    Gallery
-                    <div class="gallery">
+                    <h1 class="accent-color center">Galleri</h1>
+                    <div class="container">
                         <div class="card">
-
+                            <div class="card-header"
+                                style="background-image:url('./img/thumbnails/crush.png');">
+                                <div class="header-title">
+                                    <span>Crush</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="title">Crush</h2>
+                                <span class="category">Kortfilm</span>
+                                <p class="description">
+                                    Dette er vores afgangsprøvefilm på FTP, GF2. Her
+                                    var der mulighed for selv i grupper, at kunne
+                                    vælge vores emne. Min gruppe valgte at lave en
+                                    fiktionsfilm inspireret af Euphoria-serien. Vi
+                                    skrev selv manus og opbyggede projektet fra
+                                    bunden. Vi havde sammen i gruppen på skift skulle
+                                    agere på de forskellige roller i produktionen,
+                                    eksempelvis fotograf og lydansvarlig. Vi har alle
+                                    taget del i præproduktionen. Jeg agerede
+                                    lydansvarlig i scene 1 i soveværelset, lysmand i
+                                    scene 2 under festscenen og fotograf under scene
+                                    4 i intimscenen. Denne version er redigeret af
+                                    mig i post.
+                                </p>
+                                <div class="button play" video-type="drive" video-id="12f3-UZkgr1cS7hnJEzwZxu-GOk65LV4S">Afspil</div>
+                                <table class="more-info">
+                                    <tr>
+                                        <td>Varighed</td>
+                                        <td>05:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kamera</td>
+                                        <td>Panasonic AG-CX350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software</td>
+                                        <td>Premiere Pro CC</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"
+                                style="background-image:url('./img/thumbnails/attarosa.png');">
+                                <div class="header-title">
+                                    <span>ATTA ROSA</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="title">ATTA ROSA</h2>
+                                <span class="category">Dokumentar</span>
+                                <p class="description">
+                                    Dette er vores dokumentarprojekt på FTP. Her
+                                    var målet at lave en dokumentar, hvor vi skulle
+                                    sætte vores nye viden i brug fra bl.a. reportage
+                                    og interview-forløb. Vi havde sammen i gruppen
+                                    på skift ageret fotograf og lydansvarlig. Vi
+                                    tog alle del i præproduktionen. Denne version
+                                    er redigeret af mig i post.
+                                </p>
+                                <div class="button play" video-type="drive" video-id="1jERr2Fi9-brcSGgKlhY-B0ADOlhlFjh6">Afspil</div>
+                                <table class="more-info">
+                                    <tr>
+                                        <td>Varighed</td>
+                                        <td>04:59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kamera</td>
+                                        <td>Panasonic AG-CX350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software</td>
+                                        <td>Premiere Pro CC</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"
+                                style="background-image:url('./img/thumbnails/gemmeleg.png');">
+                                <div class="header-title">
+                                    <span>Gemmeleg</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="title">Gemmeleg</h2>
+                                <span class="category">Kortfilm</span>
+                                <p class="description">
+                                    Dette var vores første større projekt på FTP,
+                                    GF2. Her var målet at lave en gyser med
+                                    udgangspunkt i et udleveret manus. Klasserne
+                                    blev delt op i grupper og tildelt de enkelte
+                                    scener, som så til sidst skulle sættes sammen
+                                    til én kortfilm. Min gruppe stod for de sidste
+                                    2 scener (køkkenscenen og kælderscenen). Under
+                                    produktionen agerede jeg producer, lydansvarlig
+                                    og til nogle indstillinger fotograf. Hele
+                                    præproduktionen var et samarbejde mellem hele
+                                    gruppen. Jeg klippede alle scener sammen fra de
+                                    forskellige grupper i denne version. Vi skulle
+                                    vælge en version der skulle deles i klassen fra
+                                    vores egen gruppe, og vi valgte at vise min
+                                    gruppekammerats version af vores scener. Denne
+                                    kortfilm inkluderer derfor hans klippede
+                                    version af vores scener.
+                                </p>
+                                <div class="button play" video-type="drive" video-id="1o0dfkZpIJ-Xs3uITbLdBOtjkK04J1x1R">Afspil</div>
+                                <p class="description">Her kan I se min egen klippede version af vores 2 scener:</p>
+                                <div class="button play" video-type="youtube" video-id="iDqPN2Murm8">Afspil</div>
+                                <table class="more-info">
+                                    <tr>
+                                        <td>Varighed</td>
+                                        <td>16:24 / 06:02</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kamera</td>
+                                        <td>
+                                            Panasonic AG-CX350<br>
+                                            Sony
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software</td>
+                                        <td>
+                                            Premiere Pro CC<br>
+                                            DaVinci Resolve 17
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"
+                                style="background-image:url('./img/thumbnails/frisor.png');">
+                                <div class="header-title">
+                                    <span>Frisør</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="title">Frisør</h2>
+                                <span class="category">Reportage</span>
+                                <p class="description">
+                                    Dette var en opgave stillet til os på FTP,
+                                    GF2. Her havde vi til opgave at tage ud og
+                                    finde folk, der havde en form for interaktion,
+                                    og filme det som en reportage. Der måtte som
+                                    benspænd heller ikke vedlægges musik.<br>Vi
+                                    besluttede i min gruppe at filme vores ven
+                                    blive klippet hos sin frisør. Her agerede
+                                    jeg fotograf. Denne version har jeg klippet
+                                    sammen.
+                                </p>
+                                <div class="button play" video-type="youtube" video-id="6VuaAGvWo7Y">Afspil</div>
+                                <table class="more-info">
+                                    <tr>
+                                        <td>Varighed</td>
+                                        <td>01:29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kamera</td>
+                                        <td>Panasonic AG-CX350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software</td>
+                                        <td>Premiere Pro CC</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"
+                                style="background-image:url('./img/thumbnails/mainhoe.png');">
+                                <div class="header-title">
+                                    <span>MAIN HOE</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="title">MAIN HOE</h2>
+                                <span class="category">Kortfilm</span>
+                                <p class="description">
+                                    Dette var en opgave stillet til os på FTP,
+                                    GF2. Her var der til formål, at vi skulle
+                                    øve at holde kontinuiteten i en film. Vi
+                                    skulle derfor filme en person cykle fra et
+                                    sted i byen til et andet, og samtidig
+                                    opretholde kontinuiteten i de indstillinger
+                                    vi filmede og klippede sammen i post. Vi
+                                    har sammen i gruppen på skift ageret fotograf
+                                    og lydansvarlig. Vi har alle taget del i
+                                    præproduktionen. Denne version er redigeret
+                                    af mig i post.
+                                </p>
+                                <div class="button play" video-type="drive" video-id="1e3kSA-nmQRRQ_6iUa1G_2bc_SUPMlLyW">Afspil</div>
+                                <table class="more-info">
+                                    <tr>
+                                        <td>Varighed</td>
+                                        <td>03:59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kamera</td>
+                                        <td>Panasonic AG-CX350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software</td>
+                                        <td>Premiere Pro CC</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"
+                                style="background-image:url('./img/thumbnails/uglysketchbook.png');">
+                                <div class="header-title">
+                                    <span>Ugly Sketchbook shortfilm by Sharf Sisters</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="title">Ugly Sketchbook shortfilm by Sharf Sisters</h2>
+                                <span class="category">Kortfilm</span>
+                                <p class="description">
+                                    Dette er en kortfilm lavet i samarbejde med
+                                    min søster, hvor vi vil portrættere det at
+                                    have imposter syndrom og perfektionisme. Her
+                                    har vi samarbejdet om præproduktionen. Jeg
+                                    stod derudover for videografi, lydoptagelse
+                                    og lyddesign.
+                                </p>
+                                <div class="button play" video-type="youtube" video-id="dv5p5qeSoKc">Afspil</div>
+                                <table class="more-info">
+                                    <tr>
+                                        <td>Varighed</td>
+                                        <td>04:51</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kamera</td>
+                                        <td>
+                                            Canon EOS 200D<br>
+                                            Huawei P20 Pro
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software</td>
+                                        <td>
+                                            -
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"
+                                style="background-image:url('./img/thumbnails/fantasymural.png');">
+                                <div class="header-title">
+                                    <span>Making a Fantasy Mural // Galaxara</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="title">Making a Fantasy Mural // Galaxara</h2>
+                                <span class="category">Promo</span>
+                                <p class="description">
+                                    Video af kunstneren Galaxara i hendes proces
+                                    med at kreere et vægmaleri, som promo til
+                                    hendes virksomhed. Her var min rolle at agere
+                                    fotograf.
+                                </p>
+                                <div class="button play" video-type="youtube" video-id="DMbfitVD3pg">Afspil</div>
+                                <table class="more-info">
+                                    <tr>
+                                        <td>Varighed</td>
+                                        <td>02:52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kamera</td>
+                                        <td>
+                                            Canon EOS 200D<br>
+                                            Huawei P20 Pro
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software</td>
+                                        <td>
+                                            -
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"
+                                style="background-image:url('./img/thumbnails/serenepart1.png');">
+                                <div class="header-title">
+                                    <span>Serene Creators Part 1</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="title">Serene Creators Part 1</h2>
+                                <span class="category">Kortfilm</span>
+                                <p class="description">
+                                    Kortfilm med indblik i kunstnerens værk og hverdag.<br>
+                                    Dette var en opgave, hvor jeg blev stillet et
+                                    benspænd i form af, at kortfilmen skulle foregå
+                                    i et oneshot, have en rekvisit, samt være af en
+                                    person, jeg ser op til. Jeg valgte at løse denne
+                                    opgave ved at filme min søster tegne hendes
+                                    værker med hendes blyant som rekvisit.
+                                </p>
+                                <div class="button play" video-type="youtube" video-id="C4iIEUtI1FE">Afspil</div>
+                                <table class="more-info">
+                                    <tr>
+                                        <td>Varighed</td>
+                                        <td>01:31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kamera</td>
+                                        <td>
+                                            Huawei P20 Pro
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software</td>
+                                        <td>
+                                            -
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"
+                                style="background-image:url('./img/thumbnails/serenepart2.png');">
+                                <div class="header-title">
+                                    <span>Serene Creators Part 2</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="title">Serene Creators Part 2</h2>
+                                <span class="category">Kortfilm</span>
+                                <p class="description">
+                                    Kortfilm med indblik i kunstnerens værk og
+                                    hverdag. En opgave, hvor der skulle være
+                                    fokus på et sted i København, jeg holder af.
+                                    Jeg valgte at filme en violinbygger. Her var
+                                    der mulighed for at filme flere klip og
+                                    sammensætte, som man havde lyst. Jeg valgte
+                                    at filme kunstneren bag værket – et indblik
+                                    i hans hverdag, samt en del af processen i
+                                    hans værk og hans arbejdsmiljø.
+                                </p>
+                                <div class="button play" video-type="youtube" video-id="A3bHJBVyqnU">Afspil</div>
+                                <table class="more-info">
+                                    <tr>
+                                        <td>Varighed</td>
+                                        <td>03:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kamera</td>
+                                        <td>
+                                            Huawei P20 Pro
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software</td>
+                                        <td>
+                                            DaVinci Resolve 17
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"
+                                style="background-image:url('./img/thumbnails/fenrisulven.png');">
+                                <div class="header-title">
+                                    <span>Fenrisulven</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="title">Fenrisulven</h2>
+                                <span class="category">Podcast</span>
+                                <p class="description">
+                                    Podcast om Fenrisulven fra nordisk mytologi.<br>
+                                    Dette var et samarbejde med en ven med speciale
+                                    i formidling. Hun stod for at finde tekst,
+                                    historie, omskrive det og være stemmen i
+                                    fortællingen. Jeg konstruerede et makeshift
+                                    lydstudie, hvor jeg optog hendes stemme og
+                                    senere lyttede det igennem og klippede det
+                                    hele sammen. Derudover arbejdede jeg med hele
+                                    lydbilledet. Jeg optog f.eks. foley.
+                                </p>
+                                <div class="button play" video-type="soundcloud" video-id="1654476132;s-8pIDGagXyDt">Afspil</div>
+                                <table class="more-info">
+                                    <tr>
+                                        <td>Varighed</td>
+                                        <td>06:58</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kamera</td>
+                                        <td>
+                                            -
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software</td>
+                                        <td>
+                                            Studio One 4
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-title">
+                                    <span>Through worlds we ride</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="title">Through worlds we ride</h2>
+                                <span class="category">Musik</span>
+                                <p class="description">
+                                    Dette er et stykke musik jeg har komponeret.
+                                    Jeg arbejdede med forskellige tilgange til
+                                    at starte denne melodi. Mit mål var at opnå
+                                    at skabe en stemning og lyd som de gamle
+                                    arkadespil har blandet med en nyere inspireret
+                                    musik med afsæt i akustiske instrumenter.
+                                    Dette opnåede jeg ved først at begynde med
+                                    et loop, jeg fandt i DAW programmet Studio
+                                    One og arbejdede ud fra det. Jeg inkorporerede
+                                    synths jeg havde efterbearbejdet, samt brugt
+                                    midi instrumenter, og siden efterbearbejdet
+                                    med bl.a. equalizer og reverb med automation.
+                                </p>
+                                <div class="button play" video-type="soundcloud" video-id="1663285392;s-bHkXJzNBi05">Afspil</div>
+                                <table class="more-info">
+                                    <tr>
+                                        <td>Varighed</td>
+                                        <td>02:56</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kamera</td>
+                                        <td>
+                                            -
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software</td>
+                                        <td>
+                                            Studio One 4
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="page" id="contact">
+        <div class="page fullscreen" id="contact">
             <div class="page-wrap">
                 <div class="margin">
-                    <form action="">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                        <br>
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                        <br>
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
-                        <br>
-                        <label for="subject">Subject</label>
-                        <br>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                        <br>
-                        <input type="submit" value="Submit">
-                     </form>
+                    <center>
+                        <div class="profile"
+                            style="background-image:url('./img/fullbody.png');">
+                        </div>
+                    </center>
+                    <h1 class="accent-color center">Kontakt mig</h1>
+                    <p>
+                        Jeg vil elske at tale videre om muligheder for elevpladser eller projekter!
+                    </p>
+                    <table>
+                        <tr>
+                            <td>E-mail</td>
+                            <td><a href="mailto:nathie.sharf@gmail.com">nathie.sharf@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Telefon</td>
+                            <td>+45 20 93 12 60</td>
+                        </tr>
+                    </table>
+                    <p>
+                        Jeg kan også kontaktes på følgende platforme:
+                    </p>
+                    <ul class="socials">
+                        <li><a href="#contact"><img src="./img/icons/linkedin.png" alt="LinkedIn"></a></li>
+                        <li><a href="#contact"><img src="./img/icons/instagram.png" alt="Instagram"></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
