@@ -164,7 +164,7 @@ body
 }
 #contact .profile
 {
-    background-size: contain;
+    background-size: cover;
 }
 .gallery
 {
