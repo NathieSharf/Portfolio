@@ -465,7 +465,7 @@ a:hover, a:active
         margin: 0 5vw;
     }
     .card {
-        height: calc(200px + 16px);
+        height: 30vh;
     }
     .card-full {
         bottom: 0!important;
@@ -478,10 +478,11 @@ a:hover, a:active
     }
     .card-full .card-header,
     .card-header {
-        height: 20vh;
+        height: 30vh;
+        padding: 0;
     }
     .card-body {
-        top: calc(20vh + 32px);
+        top: 30vh;
     }
     #contact table td,
     p {
@@ -492,6 +493,10 @@ a:hover, a:active
     }
     h2 {
         font-size: 14pt;
+    }
+    .card-body .more-info
+    {
+        font-size: 11pt;
     }
     .socials li img {
         height: 48px;
