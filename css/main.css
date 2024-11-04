@@ -12,6 +12,10 @@
     --mayaBlue: #59C4FF;
     --coolBlue: #009EF5;
 }
+@font-face {
+    font-family: impact;
+    src: url(../fonts/impact.ttf);
+}
 html, body
 {
     box-sizing: border-box;
@@ -481,6 +485,10 @@ a:hover, a:active
         height: 30vh;
         padding: 0;
     }
+    .card-header .header-title
+    {
+        display: none!important;
+    }
     .card-body {
         top: 30vh;
     }
@@ -494,8 +502,12 @@ a:hover, a:active
     h2 {
         font-size: 14pt;
     }
+    .card-body .category {
+        font-size: 12pt
+    }
     .card-body .more-info
     {
+        padding-bottom: 50px;
         font-size: 11pt;
     }
     .socials li img {
