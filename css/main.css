@@ -461,6 +461,9 @@ a:hover, a:active
         grid-template-columns: repeat(1, minmax(100px, 1fr));
         padding: 0;
     }
+    .margin {
+        margin: 0 5vw;
+    }
     .card {
         height: calc(200px + 16px);
     }
@@ -479,5 +482,18 @@ a:hover, a:active
     }
     .card-body {
         top: calc(20vh + 32px);
+    }
+    #contact table td,
+    p {
+        font-size: 12pt;
+    }
+    h1 {
+        font-size: 16pt;
+    }
+    h2 {
+        font-size: 14pt;
+    }
+    .socials li img {
+        height: 48px;
     }
 }
