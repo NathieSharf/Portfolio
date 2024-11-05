@@ -497,10 +497,10 @@ a:hover, a:active
         font-size: 12pt;
     }
     h1 {
-        font-size: 16pt;
+        font-size: 18pt;
     }
     h2 {
-        font-size: 14pt;
+        font-size: 16pt;
     }
     .card-body .category {
         font-size: 12pt
@@ -512,5 +512,13 @@ a:hover, a:active
     }
     .socials li img {
         height: 48px;
+    }
+    #lightbox #videoplayer {
+        height: calc(90vw / 16 * 9);
+        width: 90vw;
+    }
+    #lightbox .video-close {
+        margin-bottom: calc(90vw / 16 * 9 + 24px + 10px);
+        margin-left: calc(90vw - 10px);
     }
 }
