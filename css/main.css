@@ -304,6 +304,7 @@ a:hover, a:active
 .footer
 {
     /*background-color: var(--color-bg);*/
+    pointer-events: none;
     text-align: center;
     margin-top: -58px;
     flex-shrink: 0;
