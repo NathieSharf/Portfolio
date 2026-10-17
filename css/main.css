@@ -1,5 +1,5 @@
 :root {
-    --color-bg: #222;
+    --color-bg: #29272e;
     --color-bg-light: #303440;
     --color-bg-lightest: #555;
     --color-bg-transparent-light: rgba(10, 10, 10, .6);
@@ -29,9 +29,17 @@ html
     background-color: #222;
     height: 100%;
 }
-html.scroll-lock
+body.scroll-lock
 {
-
+    overflow-y: hidden;
+}
+body.scroll-lock .nav
+{
+    right: 16px;
+}
+body.scroll-lock .page-wrap
+{
+    padding-right: 16px;
 }
 body
 {
@@ -304,7 +312,6 @@ a:hover, a:active
 .footer
 {
     /*background-color: var(--color-bg);*/
-    pointer-events: none;
     text-align: center;
     margin-top: -58px;
     flex-shrink: 0;
@@ -426,6 +433,9 @@ a:hover, a:active
     overflow-y: auto;
     padding: 16px;
     bottom: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
 }
 
 .card-body .title {
@@ -441,8 +451,9 @@ a:hover, a:active
 }
 
 .card-body .more-info {
-    margin-top: 20px;
+    margin-top: auto;
     max-width: 500px;
+    padding: 20px 0;
     font-size: 14pt;
     width: 100%;
     opacity: .5;
@@ -455,8 +466,14 @@ a:hover, a:active
 }
 
 @media only screen and (max-width: 700px) {
-    html.scroll-lock body {
+    body.scroll-lock {
         overflow-y: hidden;
+    }
+    body.scroll-lock .nav {
+        right: 0;
+    }
+    body.scroll-lock .page-wrap {
+        padding-right: 0;
     }
     .content {
         width: 100%;

@@ -79,7 +79,7 @@ function gallerycards()
 
             // Add the card-full class on the next tick to keep the animation
             setTimeout(() => clone.classList.add("card-full"), 100);
-            $("html").addClass("scroll-lock");
+            $("body").addClass("scroll-lock");
 
             // Shrink the full view back down to where it came from, then remove it
             clone.addEventListener("click", e => {
@@ -89,7 +89,7 @@ function gallerycards()
                 }
                 clone.classList.remove("card-full");
                 card.classList.toggle("flat");
-                $("html").removeClass("scroll-lock");
+                $("body").removeClass("scroll-lock");
                 setTimeout(() => clone.remove(), 300);
             });
             Array.from(clone.querySelectorAll(".button.play")).forEach(button => {
