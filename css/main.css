@@ -120,6 +120,10 @@ body
 {
     border-top: 1px solid var(--color-accent);
 }
+.page#contact .page-wrap
+{
+    padding-bottom: 58px;
+}
 
 .page#home {background-color: transparent;}
 /*
@@ -171,8 +175,8 @@ body
     max-height: 500px;
     max-width: 500px;
     margin: 40px;
-    height: 30vw;
-    width: 30vw;
+    height: 50vh;
+    width: 50vh;
 }
 #contact .profile
 {
@@ -318,6 +322,21 @@ a:hover, a:active
     padding: 20px;
     flex-grow: 0;
 }
+.dimmer {
+    background-color: #000;
+    transition: .5s opacity;
+    position: fixed;
+    opacity: 0.6;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+.dimmer.hidden {
+    pointer-events: none;
+    opacity: 0;
+}
 
 .container {
     padding: 16px;
@@ -341,6 +360,10 @@ a:hover, a:active
     height: calc(330px + 16px) /*Default 245px*/;
     transition: .3s var(--transition-easing);
     position: relative;
+}
+
+.card.highlighted {
+    z-index: 10;
 }
 
 .card:hover {
@@ -409,6 +432,7 @@ a:hover, a:active
     border-radius: 0 !important;
     /*font-size: 32px;*/
     box-shadow: 0 1px 26px rgba(0,0,0,.12);
+    z-index: 10;
 }
 
 .card-full::before {
@@ -496,7 +520,6 @@ a:hover, a:active
         top: 0!important;
         width: 100vw!important;
         height: 100vh!important;
-        z-index: 9;
     }
     .card-full .card-header,
     .card-header {
