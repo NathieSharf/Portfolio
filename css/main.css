@@ -200,7 +200,7 @@ body
     align-items: center;
     position: fixed;
     display: flex;
-    z-index: 10;
+    z-index: 11;
     opacity: 1;
     bottom: 0;
     right: 0;
